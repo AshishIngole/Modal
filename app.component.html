@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div>
+    <div *ngFor="let item of arr">
+      <li>{{item.item}}</li>
+    </div>
+    <textarea #input1 name="message" rows="10" cols="50" [(ngModel)]="time"></textarea>
+  </div>
+
+  <button type="button" [disabled]="addFlag" class="btn btn-primary" (click)="onAdd($event)">Add</button>
+  <button type="button" class="btn btn-primary" (click)="onSave(input1)">Save</button>
+  <button type="button" class="btn btn-primary">Cancel</button>
+</div>
